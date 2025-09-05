@@ -143,19 +143,241 @@ int main() {
     //     printf("Cidade 2 tem maior população.\n");
     // }
 
-    if(Carta1.populacao > Carta2.populacao ){
-        printf("Carta 1 venceu");
-    }
-    else{
-        printf("Carta 2 venceu");
-    }
-
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    int escolha1;
+    int escolha2;
+    printf("\n **  Menu interativo ** \n");
+    printf("Escolha quais poderes comparar \n");
+    printf("1 - População\n 2 - PIB\n 3 - Pontos turísticos\n 4 - Área\n 5 - Densidade\n 6 - PIB per capita\n 7 - Super poder\n");
+    scanf("%d", escolha1);
+    scanf("%d", escolha2);
+
+    int resultado1 = 0;
+    int resultado2 = 0;
+
+    switch (escolha1)
+    {
+    case 1:
+        if (Carta1.populacao > Carta2.populacao)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.populacao < Carta2.populacao){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 2:
+        if (Carta1.pib > Carta2.pib)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.pib < Carta2.pib){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 3:
+        if (Carta1.n_pt > Carta2.n_pt)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.n_pt < Carta2.n_pt){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 4:
+        if (Carta1.area > Carta2.area)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.area < Carta2.area){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 5:
+        if (Carta1.densidade < Carta2.densidade)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.densidade > Carta2.densidade){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 6:
+        if (Carta1.pibperc > Carta2.pibperc)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.pibperc < Carta2.pibperc){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 7:
+        if (Carta1.superpoder > Carta2.superpoder)
+        {
+            resultado1++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.superpoder < Carta2.superpoder){
+            resultado1--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    
+    default:
+        break;
+    }
+
+    switch (escolha2)
+    {
+    case 1:
+        if (Carta1.populacao > Carta2.populacao)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.populacao < Carta2.populacao){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 2:
+        if (Carta1.pib > Carta2.pib)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.pib < Carta2.pib){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 3:
+        if (Carta1.n_pt > Carta2.n_pt)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.n_pt < Carta2.n_pt){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 4:
+        if (Carta1.area > Carta2.area)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.area < Carta2.area){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 5:
+        if (Carta1.densidade < Carta2.densidade)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.densidade > Carta2.densidade){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 6:
+        if (Carta1.pibperc > Carta2.pibperc)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.pibperc < Carta2.pibperc){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    case 7:
+        if (Carta1.superpoder > Carta2.superpoder)
+        {
+            resultado2++;
+            printf("Carta 1 venceu na primeira escolha");
+        }
+        else if(Carta1.superpoder < Carta2.superpoder){
+            resultado2--;
+            printf("Carta 2 venceu primeira escolha");
+        }
+        else{
+            printf("Primeira escolha empatou");
+        } 
+        break;
+    
+    default:
+        break;
+    }
+
+
+    if(resultado1+resultado2 > 0){
+        printf("Carta 1 é a vencedora");
+    } else if(resultado1+resultado2 < 0 ){
+        printf("Carta 2 é a vencedora");
+    } else{
+        printf("Empate!");
+    }
 
     return 0;
 }
